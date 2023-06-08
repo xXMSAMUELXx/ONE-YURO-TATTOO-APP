@@ -1,0 +1,35 @@
+.content {
+  font-family: "Alegreya", serif;
+  font-size: 25px;
+  font-weight: bolder;
+  position: relative;
+  bottom: 100px;
+  display: inline-flex;
+  padding: 20px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  width: 90%;
+}
+
+h2 {
+  padding: 40px;
+}
+
+.one,
+.two,
+.three {
+  width: 300px;
+}
+
+@media screen and (max-width: 500px) {
+  .content {
+    position: relative;
+    bottom: 30px;
+    flex-direction: column;
+    padding: 20px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    width: 100%;
+    height: auto;
+  }
+}

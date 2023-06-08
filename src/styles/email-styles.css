@@ -1,0 +1,54 @@
+.book-text {
+  width: 100%;
+  padding-bottom: 20px;
+  flex-direction: row;
+  text-align: center;
+  flex-direction: column;
+}
+.form-control {
+  padding-top: 20px;
+  display: flex;
+  width: 700px;
+  margin-left: 250px;
+  margin-bottom: 20px;
+  flex-direction: column;
+  text-align: center;
+}
+
+.text-center {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 60px;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.email-btn {
+  width: 100px;
+  margin-top: 20px;
+  font-size: 10px;
+}
+
+@media screen and (max-width: 500px) {
+  .book-text {
+    width: 350px;
+
+    height: auto;
+    margin-left: 60px;
+  }
+
+  .form-control {
+    width: 350px;
+    margin-left: 60px;
+    height: auto;
+  }
+
+  .text-center {
+    width: 85%;
+    height: auto;
+  }
+  .email-btn {
+    width: 100px;
+    height: auto;
+    margin-left: 0px;
+  }
+}

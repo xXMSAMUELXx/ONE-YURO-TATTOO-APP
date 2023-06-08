@@ -1,0 +1,18 @@
+.map-container {
+  border-top: 1px solid black;
+  margin-top: 100px;
+  margin-left: 130px;
+  width: 80%;
+  height: 80vh;
+  margin-bottom: 50px;
+}
+
+@media screen and (max-width: 500px) {
+  .map-container {
+    width: 400px;
+    height: 400px;
+    float: bottom;
+    margin-left: 25px;
+    margin-right: 0px;
+  }
+}
