@@ -1,46 +1,43 @@
-.hero-img {
-  border-top: 1px solid black;
-  margin-top: 80px;
-  margin-left: 10px;
-  position: relative;
+/* styles for wider than 758px */
 
-  padding-top: 30px;
+.container-one {
+  border-top: 1px solid black;
+  margin-top: 18.2vh;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 18.2vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  margin-right: 18vh;
   animation: fadeIn 5s;
 }
 
-.intro,
-h1 {
-  position: relative;
-  padding-right: 50px;
-  padding-top: 25px;
-  margin-bottom: 20px;
-  max-width: 500px;
-  float: right;
+.left img {
+  animation: fadeIn 5s;
+  margin-right: 5.3vh;
+}
+
+.text-one {
+  margin-top: 18.2vh;
+  font-size: 12.7vh;
   font-family: "Bebas Neue", sans-serif;
-  font-size: 70px;
+  margin-bottom: 5vh;
+  width: 85vh;
+}
+
+.button-one {
+  margin-top: 3.6vh;
+  font-size: 7.2vh;
   color: black;
-  flex-direction: column;
+  width: 85vh;
 }
 
-.intro,
-button {
-  color: black;
-  float: bottom;
-  max-width: 500px;
-  font-size: 50px;
-}
-
-.intro button {
-  padding: 10px;
-  margin-right: 50px;
-  width: 300px;
-  font-size: 20px;
-  display: inline-block;
-  cursor: pointer;
-  justify-content: center;
-}
-
-button:hover {
+.button-one:hover {
   color: white;
   background-color: black;
   border-style: none;
@@ -55,49 +52,58 @@ button:hover {
   }
 }
 
-@media screen and (max-width: 500px) {
-  .intro {
-    width: 100%;
-    height: auto;
+@media (max-width: 1150px) {
+  .container-one {
+    border-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5vh;
   }
 
-  .hero-img {
-    width: 100%;
-    height: auto;
-    border: none;
+  .left img {
+    padding-left: 25vh;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container-one {
+    margin-top: 67vh;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .container-one {
+    border-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
   }
 
-  .hero-img img {
-    width: 80%;
-    height: auto;
-    margin-top: 200px;
-    position: relative;
+  .left {
+    height: 90%;
+    width: 90%;
+    padding-right: 20vh;
   }
 
-  .intro h1 {
-    position: relative;
-    padding-left: 50px;
-    margin-bottom: 20px;
+  .left img {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10vh;
     width: 100%;
-    height: auto;
-    font-family: "Bebas Neue", sans-serif;
-    font-size: 40px;
-    color: black;
+    height: 100%;
   }
-  .intro button {
-    width: 50%;
-    height: auto;
-    font-size: 20px;
-    display: inline-block;
-    cursor: pointer;
-    justify-content: center;
-  }
-
-  .intro,
-  button {
-    width: 100%;
-    height: auto;
-    margin-left: 150px;
-    margin-bottom: 0px;
+  .button-one {
+    margin-left: auto;
+    margin-right: auto;
+    width: 60vh;
   }
 }

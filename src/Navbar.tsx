@@ -4,7 +4,7 @@ import "./styles/nav-styles.css";
 import { useMediaQuery } from "usehooks-ts";
 
 export default function Navbar() {
-  const greaterThan700 = useMediaQuery("(min-width: 700px)");
+  const greaterThan800 = useMediaQuery("(min-width: 800px)");
   const [toggleMenu, setToggleMenu] = useState(false);
 
   const toggleNav = () => {
@@ -13,8 +13,8 @@ export default function Navbar() {
 
   return (
     <nav>
-      {(toggleMenu || greaterThan700) && (
-        <>
+      {(toggleMenu || greaterThan800) && (
+        <div className="nav-container">
           <div className="logo">
             <a href="/">
               <img src="/logo.png" width={220} height={95} alt={"1eruo"} />
@@ -37,7 +37,7 @@ export default function Navbar() {
               </a>
             </li>
           </ul>
-        </>
+        </div>
       )}
       <button onClick={toggleNav} className="btn-toggle">
         <div className="bar1"></div>

@@ -31,7 +31,7 @@ const Flash = () => {
   };
 
   return (
-    <div className="container">
+    <div className="flash-container">
       <button
         type="button"
         title="previous"

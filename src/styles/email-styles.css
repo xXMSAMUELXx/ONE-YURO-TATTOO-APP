@@ -1,54 +1,67 @@
 .book-text {
   width: 100%;
-  padding-bottom: 20px;
+  font-weight: 500;
+
+  padding-bottom: 1vh;
   flex-direction: row;
   text-align: center;
   flex-direction: column;
 }
 .form-control {
-  padding-top: 20px;
+  padding-top: 3.6vh;
   display: flex;
-  width: 700px;
-  margin-left: 250px;
-  margin-bottom: 20px;
+  width: 127vh;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3.6vh;
   flex-direction: column;
   text-align: center;
 }
 
 .text-center {
   font-family: "Bebas Neue", sans-serif;
-  font-size: 60px;
+  font-size: 10.9vh;
   text-align: center;
-  padding-bottom: 10px;
+  padding-bottom: 1.8vh;
 }
 
 .email-btn {
-  width: 100px;
-  margin-top: 20px;
-  font-size: 10px;
+  width: 18.2vh;
+  margin-top: 3.6vh;
+  font-size: 1.8vh;
 }
 
-@media screen and (max-width: 500px) {
-  .book-text {
-    width: 350px;
+.email-btn:hover {
+  color: white;
+  background-color: black;
+  border-style: none;
+}
 
-    height: auto;
-    margin-left: 60px;
+@media (max-width: 768px) {
+  .email-container {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .form-control {
-    width: 350px;
-    margin-left: 60px;
-    height: auto;
+    width: 70%;
+    height: 70%;
+    margin-left: 0vh;
+    margin-right: 0vh;
   }
 
-  .text-center {
-    width: 85%;
-    height: auto;
+  .book-text {
+    width: 90%;
   }
-  .email-btn {
-    width: 100px;
-    height: auto;
-    margin-left: 0px;
+}
+
+@media (max-width: 425px) {
+  .form-control {
+    padding-left: 5vh;
   }
 }

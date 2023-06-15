@@ -1,58 +1,59 @@
-.title {
-  max-width: 100%;
-  margin-left: 125px;
+.aboutContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-div.about-titleImg {
-  width: 400px;
+.title {
+  font-size: 8vh;
+  margin-bottom: 3.6vh;
 }
-.about-titleImg img {
-  margin-left: 420px;
-  width: 90%;
-  height: 90%;
-  padding-bottom: 50px;
+
+.aboutImage {
+  margin-top: 7vh;
+  margin-bottom: 7vh;
 }
 
 .caption {
-  font-family: "Alegreya", serif;
-  width: 700px;
-  margin: 0 270px;
-  display: flex;
-  align-items: flex-start;
-  text-align: left;
-  font-size: 20px;
-  font-family: "Alegreya", serif;
-  padding-bottom: 20px;
+  font-weight: 500;
+  width: 60%;
+  font-size: 3.2vh;
+  line-height: 1.5;
+  margin-bottom: 10vh;
 }
 
 .caption-two {
-  font-family: "Alegreya", serif;
-  width: 700px;
-  margin: 0 270px;
-  display: flex;
-  align-items: flex-start;
-  text-align: left;
-  font-size: 20px;
-  font-family: "Alegreya", serif;
+  font-weight: 500;
+  width: 60%;
+  font-size: 3.2vh;
+  line-height: 1.5;
+  margin-bottom: 3.6vh;
 }
 
-@media screen and (max-width: 500px) {
+@media (max-width: 768px) {
+  .aboutContainer {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .aboutImage {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .title {
-    margin-left: 0px;
+    font-size: 5.4vh;
+    margin-left: 2vh;
+    width: 100vh;
   }
 
-  .about-titleImg img {
-    margin-left: 40px;
-  }
   .caption {
-    margin-left: 40px;
-    width: 375px;
-    text-align: center;
+    width: 100%;
   }
-
   .caption-two {
-    margin-left: 40px;
-    width: 375px;
-    text-align: center;
+    width: 100%;
   }
 }

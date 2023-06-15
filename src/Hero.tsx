@@ -1,15 +1,26 @@
 import "./styles/hero-styles.css";
+import Email from "./Email";
 
 function Hero() {
+  const scrollToAppointmentSection = () => {
+    const appointmentSection = document.getElementById("book-apt");
+    appointmentSection.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <>
-      <div className="hero-img">
-        <img src="./smokin.png" width={600} height={450} alt={"smokin"} />
+      <div className="container-one">
+        <div className="left">
+          <img src="./smokin.png" width={600} height={450} alt="smokin" />
+        </div>
+        <div className="right">
+          <div className="text-one">YOUR NEW FAVORITE TATTOO ARTIST.</div>
+          <button className="button-one" onClick={scrollToAppointmentSection}>
+            BOOK APPOINTMENT
+          </button>
+        </div>
       </div>
-      <div className="intro">
-        <h1>YOUR NEW FAVORITE TATTOO ARTIST.</h1>
-        <button type="button">GET INK BAPTIZED</button>
-      </div>
+      <section id="#book-apt"></section>
     </>
   );
 }

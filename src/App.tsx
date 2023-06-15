@@ -1,6 +1,6 @@
 import NavBar from "./Navbar";
 import Hero from "./Hero";
-import Body from "./Body";
+import HeroTwo from "./HeroTwo";
 import Content from "./Content";
 import Flash from "./Flash";
 import Home from "./Map";
@@ -14,7 +14,7 @@ function App() {
     <>
       <NavBar />
       <Hero />
-      <Body />
+      <HeroTwo />
       <Content />
       <Flash />
       <About />

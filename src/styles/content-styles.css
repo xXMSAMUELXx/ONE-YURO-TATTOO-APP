@@ -1,35 +1,56 @@
 .content {
+  margin-left: auto;
+  margin-right: auto;
   font-family: "Alegreya", serif;
-  font-size: 25px;
+  font-size: 4.5vh;
   font-weight: bolder;
   position: relative;
-  bottom: 100px;
-  display: inline-flex;
-  padding: 20px;
+  bottom: 18.2vh;
+  display: flex;
+  padding: 3.6vh;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
   width: 90%;
 }
 
 h2 {
-  padding: 40px;
+  padding: 7.2vh;
 }
 
 .one,
 .two,
 .three {
-  width: 300px;
+  width: 51vh;
 }
-
-@media screen and (max-width: 500px) {
+@media (max-width: 1026px) {
   .content {
-    position: relative;
-    bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .one,
+  .two,
+  .three {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (max-width: 768px) {
+  .content {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
     flex-direction: column;
-    padding: 20px;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
-    width: 100%;
-    height: auto;
+    border-style: none;
+  }
+
+  h2 {
+    padding: 1.8vh;
+  }
+
+  .one,
+  .two,
+  .three {
+    width: 70vh;
+    font-size: 9.1vh;
   }
 }

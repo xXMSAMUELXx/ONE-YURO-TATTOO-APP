@@ -1,6 +1,6 @@
 footer {
   border-top: 1px solid black;
-  margin-bottom: 50px;
+  margin-bottom: 9.1vh;
 }
 
 .footer .footerlogo,
@@ -8,14 +8,14 @@ img {
   display: flex-box;
   position: relative;
   float: left;
-  padding-top: 20px;
+  padding-top: 3.6vh;
 
-  padding-left: 5px;
+  padding-left: 0.9vh;
 }
 
 .footerlist {
   font-family: "Alegreya", serif;
-  font-size: 20px;
+  font-size: 3.6vh;
   color: black;
   cursor: pointer;
   position: relative;
@@ -27,9 +27,35 @@ img {
 
 .footer-items {
   font-family: "Alegreya", serif;
-  font-size: 20px;
+  font-size: 3.6vh;
   color: black;
   cursor: pointer;
   padding: 10px 0;
-  padding-right: 30px;
+  padding-right: 5.4vh;
+  text-decoration: none;
+}
+
+.footer-items:hover {
+  color: rgb(220, 81, 93);
+  border-style: none;
+}
+
+@media (max-width: 768px) {
+  footer {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .footer {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .footer-items {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .footerlist {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

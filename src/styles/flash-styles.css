@@ -1,29 +1,35 @@
+.flash-container {
+  margin-bottom: 20vh;
+  flex-direction: column;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .prev-btn {
-  float: left;
-  left: 200px;
-  top: 250px;
+  margin-bottom: 1.8vh;
 }
+
 .next-btn {
-  float: right;
-  right: 105px;
-  bottom: 310px;
+  margin-bottom: 1.8vh;
 }
+
 button {
   position: relative;
-  font-size: 20px;
-  bottom: 10px;
-  padding: 10px;
+  font-size: 3.6vh;
+  bottom: 1.8vh;
+  padding: 1.8vh;
   cursor: pointer;
 }
 
 .slideshow_container {
   align-items: center;
-  width: 550px;
-  height: 550px;
+  width: 90vh;
+  height: 90vh;
   position: relative;
-  overflow: visible;
-  margin-left: 350px;
-  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3.6vh;
   border-bottom: 1px solid black;
   border-spacing: 5px;
 }
@@ -50,36 +56,41 @@ button {
   display: block;
 }
 
-@media screen and (max-width: 500px) {
-  .prev-btn {
-    position: relative;
-    width: 100px;
-    flex-direction: column;
-    margin-left: -90px;
-    font-size: 10px;
-    top: -30px;
+@media (max-width: 1440px) {
+  .next-btn {
+    margin-top: 10vh;
+  }
+}
+
+@media (max-width: 1024px) {
+  .flash-container {
+    margin: auto;
+  }
+  .slideshow_container {
+    margin: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .flash-container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
   }
 
-  .next-btn {
-    position: relative;
-    left: 10px;
-    bottom: 440px;
-    flex-direction: column;
-    width: 100px;
-    font-size: 10px;
-    display: flex;
-  }
   .slideshow_container {
-    width: 400px;
-    height: 400px;
-    margin-left: 25px;
-    margin-right: 10px;
-    display: block;
-  }
-  .slider {
+    margin-bottom: 80px;
+    margin-left: 0;
+    margin-right: 0;
     width: 100%;
-    margin: 0;
-    padding: 0;
+  }
+
+  .prev-btn {
+    margin: 0 auto 1vh;
+  }
+
+  .next-btn {
+    margin: 0 auto;
   }
 }
