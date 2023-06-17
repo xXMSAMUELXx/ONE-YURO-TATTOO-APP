@@ -1,10 +1,8 @@
-/* styles for wider than 758px */
-
 .container-one {
   border-top: 1px solid black;
   margin-top: 18.2vh;
   display: flex;
-  align-items: flex-start;
+  align-items: flex;
   margin-bottom: 18.2vh;
   margin-left: auto;
   margin-right: auto;
@@ -27,7 +25,9 @@
   font-size: 12.7vh;
   font-family: "Bebas Neue", sans-serif;
   margin-bottom: 5vh;
-  width: 85vh;
+  width: 80vh;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .button-one {
@@ -88,6 +88,10 @@
     margin-right: auto;
   }
 
+  .text-one {
+    margin-left: 10vh;
+  }
+
   .left {
     height: 90%;
     width: 90%;
@@ -102,8 +106,37 @@
     height: 100%;
   }
   .button-one {
-    margin-left: auto;
+    margin-left: 10vh;
     margin-right: auto;
     width: 60vh;
+  }
+}
+
+@media (max-width: 375px) {
+  .container-one {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .text-one {
+    margin-left: 10vh;
+    margin-right: auto;
+  }
+
+  .left {
+    height: 100%;
+    width: 100%;
+    padding-right: 20vh;
+  }
+}
+
+@media (max-width: 320px) {
+  .container-one {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
   }
 }

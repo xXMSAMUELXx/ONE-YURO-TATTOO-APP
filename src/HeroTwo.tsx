@@ -1,10 +1,9 @@
 import "./styles/hero-styles-two.css";
-import Flash from "./Flash";
 
 const scrollToFlashSection = () => {
   const flashSection = document.getElementById("flash-section");
 
-  const offsetTop = 20; // Adjust the offset value as needed
+  const offsetTop = 20;
   const elementPosition = flashSection.offsetTop - offsetTop;
   window.scrollTo({
     top: elementPosition,

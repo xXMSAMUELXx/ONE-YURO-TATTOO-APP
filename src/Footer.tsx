@@ -19,7 +19,7 @@ function Footer() {
           <a
             className="footer-items"
             href="https://www.instagram.com/one_yuro/?hl=en"
-            target="_blankn"
+            target="_blank"
           >
             INSTA
           </a>
