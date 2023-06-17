@@ -54,3 +54,20 @@ h2 {
     font-size: 9.1vh;
   }
 }
+
+@media (max-width: 375px) {
+  .content {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 320px) {
+  .content {
+    margin-left: 10vh;
+    margin-right: auto;
+    width: 100%;
+  }
+}

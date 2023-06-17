@@ -21,3 +21,11 @@
     margin-right: auto;
   }
 }
+
+@media (max-width: 320px) {
+  .map-container {
+    margin-left: 15vh;
+    margin-right: auto;
+    width: 100%;
+  }
+}

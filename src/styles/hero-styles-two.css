@@ -80,3 +80,26 @@
     width: 60vh;
   }
 }
+
+@media (max-width: 375px) {
+  .container-two {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 320px) {
+  .container-two {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    margin-left: 20vh;
+  }
+
+  .right-two {
+    width: 100%;
+  }
+}
