@@ -23,7 +23,6 @@ img {
   list-style-type: none;
   float: right;
 }
-
 .footer-items {
   font-family: "Alegreya", serif;
   font-size: 3.6vh;
@@ -41,11 +40,14 @@ img {
 
 @media (max-width: 425px) {
   footer {
+    border-style: none;
     width: 100%;
+    margin-left: 10vh;
   }
 
   .footerlogo {
-    width: 100%;
+    width: 50%;
+    height: 50%;
     margin-left: auto;
     margin-right: auto;
   }

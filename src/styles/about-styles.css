@@ -1,6 +1,7 @@
 .aboutContainer {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   text-align: center;
   margin-left: auto;
@@ -34,27 +35,26 @@
 }
 
 @media (max-width: 768px) {
-  .aboutContainer {
+  .title {
     width: 75%;
+  }
+
+  .aboutContainer {
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
+    justify-content: center;
   }
   .aboutImage {
     margin-left: auto;
     margin-right: auto;
   }
 
-  .title {
-    font-size: 5.4vh;
-    margin-left: 2vh;
-    width: 100vh;
-  }
-
   .caption {
-    width: 100%;
+    width: 75%;
   }
   .caption-two {
-    width: 100%;
+    width: 75%;
   }
 }
 
@@ -62,6 +62,7 @@
   .about-container {
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
 
   .title {
@@ -74,15 +75,12 @@
   }
   .aboutImage {
     margin-top: 20vh;
-    margin-left: 6vh;
+    margin-left: 15vh;
     margin-right: auto;
     width: fit-content;
   }
 
-  .caption {
-    margin-left: 15vh;
-  }
-
+  .caption,
   .caption-two {
     margin-left: 15vh;
   }
@@ -90,8 +88,17 @@
   @media (max-width: 375px) {
     .title {
       margin-right: auto;
-      margin-left: auto;
-      width: fit-content;
+      margin-left: 20vh;
+      width: 70%;
+    }
+
+    .aboutImage {
+      margin-left: 12vh;
+    }
+
+    .caption,
+    .caption-two {
+      margin-left: 16vh;
     }
   }
 
@@ -101,20 +108,15 @@
       align-items: center;
     }
 
-    .caption {
-      margin-left: 15vh;
-      margin-right: auto;
-    }
-
-    .caption-two {
-      margin-left: 15vh;
-      margin-right: auto;
-    }
-
     .title {
       margin-left: 13vh;
       margin-right: auto;
       width: 100%;
+    }
+
+    .caption,
+    .caption-two {
+      margin-left: 20vh;
     }
   }
 }

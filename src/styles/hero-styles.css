@@ -1,8 +1,9 @@
 .container-one {
+  justify-content: center;
   border-top: 1px solid black;
-  margin-top: 18.2vh;
+  margin-top: 10.2vh;
   display: flex;
-  align-items: flex;
+  align-items: flex-start;
   margin-bottom: 18.2vh;
   margin-left: auto;
   margin-right: auto;
@@ -13,11 +14,14 @@
   flex-direction: column;
   margin-right: 18vh;
   animation: fadeIn 5s;
+  align-items: center;
 }
 
 .left img {
   animation: fadeIn 5s;
   margin-right: 5.3vh;
+  max-width: 100%;
+  height: auto;
 }
 
 .text-one {
@@ -28,6 +32,7 @@
   width: 80vh;
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
 }
 
 .button-one {
@@ -71,6 +76,7 @@
 
 @media (max-width: 1024px) {
   .container-one {
+    width: fit-content;
     margin-top: 67vh;
     margin-left: auto;
     margin-right: auto;
@@ -79,64 +85,95 @@
 
 @media (max-width: 768px) {
   .container-one {
-    border-style: none;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .text-one {
-    margin-left: 10vh;
+    margin-top: 63vh;
+    margin-bottom: 15vh;
   }
 
   .left {
-    height: 90%;
-    width: 90%;
-    padding-right: 20vh;
+    margin-right: 0;
   }
 
   .left img {
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 10vh;
-    width: 100%;
-    height: 100%;
+    margin-right: 10vh;
+
+    height: auto;
   }
+
+  .text-one {
+    margin-top: 8vh;
+    font-size: 15vh;
+    margin-bottom: 3vh;
+    width: 90%;
+  }
+
   .button-one {
+    margin-top: 3vh;
+    font-size: 4.5vh;
+    width: 70%;
+  }
+}
+
+@media (max-width: 425px) {
+  .left {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .left img {
+    margin-left: -5vh;
+
+    height: auto;
+  }
+
+  .text-one {
+    margin-top: 5vh;
+    font-size: 10vh;
     margin-left: 10vh;
-    margin-right: auto;
-    width: 60vh;
+    margin-bottom: 2vh;
+    width: 90%;
+  }
+
+  .button-one {
+    margin-top: 2vh;
+    margin-left: 12vh;
+    font-size: 4vh;
+    width: 90%;
   }
 }
 
 @media (max-width: 375px) {
   .container-one {
-    margin-left: auto;
-    margin-right: auto;
     display: flex;
-    flex-direction: column;
-  }
-
-  .text-one {
-    margin-left: 10vh;
-    margin-right: auto;
+    margin-bottom: 8vh;
   }
 
   .left {
-    height: 100%;
-    width: 100%;
-    padding-right: 20vh;
+    margin-right: 0;
+  }
+
+  .left img {
+    margin-right: 1vh;
+
+    height: auto;
+  }
+
+  .text-one {
+    margin-left: 8vh;
+    margin-top: 5vh;
+    font-size: 7vh;
+    margin-bottom: 2vh;
+  }
+
+  .button-one {
+    margin-left: 10vh;
+    margin-top: 2vh;
+    font-size: 3.5vh;
+    width: 90%;
   }
 }
 
 @media (max-width: 320px) {
   .container-one {
-    width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
+    padding-left: 10vh;
   }
 }

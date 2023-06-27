@@ -20,7 +20,7 @@
 }
 
 .list {
-  margin-top: 5vh;
+  margin-top: 2vh;
   list-style-type: none;
   flex-direction: row;
   width: 100%;
@@ -43,7 +43,7 @@
 .list {
   flex-direction: row;
   padding-top: 5vh;
-  padding-left: 8vh;
+  padding-left: 20vh;
   font-size: 5vh;
   color: black;
   cursor: pointer;
@@ -174,4 +174,7 @@
     opacity: 1;
     transform: none;
   }
+}
+
+@media (max-width: 475px) {
 }

@@ -1,12 +1,12 @@
 import "./styles/hero-styles.css";
 
+const scrollToAppointmentSection = () => {
+  const appointmentSection = document.getElementById("book-apt");
+
+  appointmentSection.scrollIntoView({ behavior: "smooth" });
+};
+
 function Hero() {
-  const scrollToAppointmentSection = () => {
-    const appointmentSection = document.getElementById("book-apt");
-
-    appointmentSection.scrollIntoView({ behavior: "smooth" });
-  };
-
   return (
     <>
       <div className="container-one">

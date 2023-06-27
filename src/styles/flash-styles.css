@@ -81,52 +81,51 @@ button {
   }
 
   .slideshow_container {
-    margin-bottom: 80px;
+    margin-bottom: 20px;
     margin-left: auto;
     margin-right: auto;
   }
 
-  .prev-btn {
-    margin-left: auto;
-    margin-right: 20vh;
-  }
-
+  .prev-btn,
   .next-btn {
-    margin-left: auto;
-    margin-right: 20vh;
+    display: block;
+    margin-right: 35vh;
+
+    align-items: center;
+  }
+  .next-btn,
+  .prev-btn {
+    margin-left: 35vh;
   }
 }
 
 @media (max-width: 425px) {
   .slideshow_container {
     margin-bottom: 80px;
-    margin-left: auto;
+    margin-left: 0vh;
     margin-right: auto;
   }
 
   .prev-btn {
     display: flex;
     justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 55vh;
   }
 
   .next-btn {
-    margin: 0 auto;
+    margin-left: 55vh;
+
     justify-content: center;
   }
 }
 
-@media (min-width: 320px) {
+@media (max-width: 320px) {
   .flash-container {
     display: flex;
     flex-direction: column;
   }
-  .prev-btn {
-    width: fit-content;
-    margin-left: 40vh;
-  }
+  .prev-btn,
   .next-btn {
-    margin-left: 40vh;
+    margin-left: 65vh;
   }
 }
