@@ -51,13 +51,21 @@ h2 {
   .two,
   .three {
     width: 70vh;
-    font-size: 9.1vh;
+    font-size: 6vh;
+  }
+}
+
+@media (max-width: 425px) {
+  .one,
+  .two,
+  .three {
+    margin-left: 6vh;
   }
 }
 
 @media (max-width: 375px) {
   .content {
-    margin-left: auto;
+    margin-left: 0vh;
     margin-right: auto;
     display: flex;
     flex-direction: column;
@@ -66,8 +74,6 @@ h2 {
 
 @media (max-width: 320px) {
   .content {
-    margin-left: 10vh;
-    margin-right: auto;
     width: 100%;
   }
 }

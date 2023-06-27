@@ -1,4 +1,5 @@
 .container-two {
+  justify-content: center;
   margin-top: 18.2vh;
   display: flex;
   align-items: flex-start;
@@ -8,6 +9,7 @@
 }
 
 .left-two {
+  align-items: center;
   display: flex;
   flex-direction: column;
   margin-right: auto;
@@ -25,9 +27,16 @@
 .button-two {
   margin-left: 9.1vh;
   margin-top: 3.6vh;
-  font-size: 7.28vh;
+  font-size: 7.2vh;
   color: black;
-  max-width: 91vh;
+  width: 85vh;
+}
+
+.right-two img {
+  animation: fadeIn 5s;
+  margin-right: 5.3vh;
+  max-width: 100%;
+  height: auto;
 }
 
 .button-two:hover {
@@ -61,23 +70,43 @@
   .container-two {
     margin-left: auto;
     margin-right: auto;
-    display: flex;
-    flex-direction: column;
-  }
-  .right-two {
-    height: auto;
-    position: relative;
   }
 
-  .right-two img {
+  .text-two {
     width: 100%;
-    height: 100%;
+    font-size: 15vh;
   }
 
   .button-two {
-    margin-right: auto;
-    margin-left: auto;
-    width: 60vh;
+    margin-top: 3vh;
+    margin-left: -2vh;
+    font-size: 4.5vh;
+    width: 100%;
+  }
+}
+
+@media (max-width: 425px) {
+  .right-two {
+    margin-left: 5vh;
+    margin-right: 0;
+  }
+
+  .text-two {
+    margin-top: 10vh;
+    margin-left: 8vh;
+    font-size: 10vh;
+    width: 100%;
+    padding-bottom: 5vh;
+  }
+
+  .button-two {
+    margin-left: 16vh;
+    font-size: 4vh;
+    width: 120%;
+  }
+
+  .right-two img {
+    max-width: 120%;
   }
 }
 
@@ -87,19 +116,27 @@
     margin-right: auto;
     display: flex;
     flex-direction: column;
+    align-items: center;
+  }
+
+  .text-two {
+    margin-left: 8vh;
+
+    font-size: 7vh;
+  }
+
+  .button-two {
+    margin-left: 13vh;
+  }
+
+  .right-two img {
+    margin-left: 0vh;
   }
 }
 
 @media (max-width: 320px) {
   .container-two {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: fit-content;
-    margin-left: 20vh;
-  }
-
-  .right-two {
-    width: 100%;
+    padding-left: 10vh;
+    margin-right: auto;
   }
 }
