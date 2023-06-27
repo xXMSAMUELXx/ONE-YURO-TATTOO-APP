@@ -17,7 +17,7 @@ export default function Navbar() {
         <div className="nav-container">
           <div className="logo">
             <a href="/">
-              <img src="/logo.png" width={220} height={95} alt={"1eruo"} />
+              <img src="/logo.png" width={160} height={75} alt={"1eruo"} />
             </a>
           </div>
 
